@@ -1,0 +1,25 @@
+# Python 缓存与中间编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 忽略海量图片数据集子目录 (包含 ~79,000 张高分辨率图像，体积数十 GB)
+Happywhale - Whale and Dolphin Identification/
+train_images/
+test_images/
+
+# 忽略超过 GitHub 100MB 限制的大权重文件 (如 131MB 的 ResNet-50 权重)
+*.pth
+output*/*.pth
+
+# 临时生成文件与缓存
+*.tmp
+*.log
+
+# IDE 与操作系统配置文件
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
